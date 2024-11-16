@@ -22,7 +22,6 @@ class Genre:
                 self.l_val = l_val
                 self.likeness = likeness
                 self.dataframe = pd.concat([h_val, s_val, l_val, likeness], axis=1)
-                print(self.dataframe)
 
 genre_list = []
 
