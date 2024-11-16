@@ -18,13 +18,13 @@
 #   [3] d/m/l_frame
 
 import tkinter as tk
-import GenreProcessing as gp
+#import GenreProcessing as gp
 
 window = tk.Tk()
 window.geometry('900x600')
 
 # TODO: update genre
-genre_label = tk.Label(window, text="Genre",font=("Inconsolata", 26))
+genre_label = tk.Label(window, text="Genre",font=("Times New Roman", 26))
 genre_label.place(x = 400 ,y = 0 )
 
 main_frame = tk.Frame(window, bg="#DEDEDE", width=880, height=540, borderwidth=1, relief="solid")
@@ -51,11 +51,11 @@ right_h_frame = tk.Frame(window,bg="#DEDEDE", width=293, height=440, borderwidth
 right_h_frame.place(x = 597,y = 50)
 
 # d/m/l Labels
-d_label = tk.Label(window, text="Dislike", font=("Inconsolata", 20), bg="#DEDEDE")
+d_label = tk.Label(window, text="Dislike", font=("Times New Roman", 20), bg="#DEDEDE")
 d_label.place(x = 105 ,y = 53 )
-m_label = tk.Label(window, text="Moderate", font=("Inconsolata", 20), bg="#DEDEDE")
+m_label = tk.Label(window, text="Moderate", font=("Times New Roman", 20), bg="#DEDEDE")
 m_label.place(x = 398 ,y = 53 )
-l_label = tk.Label(window, text="Like", font=("Inconsolata", 20), bg="#DEDEDE")
+l_label = tk.Label(window, text="Like", font=("Times New Roman", 20), bg="#DEDEDE")
 l_label.place(x = 712 ,y = 53 )
 
 # d/m/l Frames
@@ -67,9 +67,25 @@ m_frame.place(x = 303,y = 100)
 l_frame = tk.Frame(window,bg="Green", width=293, height=340, borderwidth=1, relief="solid")
 l_frame.place(x = 597,y = 100)
 
-d_h_label = tk.Label(d_frame, text="d_h_value", font=("Inconsolata", 20))
-d_h_label.place(x = 10,y = 100)
+d_h_label = tk.Label(window, text="d_h_value", font=("Times New Roman", 20), bg="#DEDEDE")
+d_h_label.place(x = 90,y = 442)
+d_s_label = tk.Label(window, text="d_s_value", font=("Times New Roman", 20), bg="#DEDEDE")
+d_s_label.place(x = 90,y = 492)
+d_l_label = tk.Label(window, text="d_l_value", font=("Times New Roman", 20), bg="#DEDEDE")
+d_l_label.place(x = 90,y = 542)
 
+m_h_label = tk.Label(window, text="m_h_value", font=("Times New Roman", 20), bg="#DEDEDE")
+m_h_label.place(x = 390,y = 442)
+m_s_label = tk.Label(window, text="m_s_value", font=("Times New Roman", 20), bg="#DEDEDE")
+m_s_label.place(x = 390,y = 492)
+m_l_label = tk.Label(window, text="m_l_value", font=("Times New Roman", 20), bg="#DEDEDE")
+m_l_label.place(x = 390,y = 542)
 
+l_h_label = tk.Label(window, text="l_h_value", font=("Times New Roman", 20), bg="#DEDEDE")
+l_h_label.place(x = 680,y = 442)
+l_s_label = tk.Label(window, text="l_s_value", font=("Times New Roman", 20), bg="#DEDEDE")
+l_s_label.place(x = 680,y = 492)
+l_l_label = tk.Label(window, text="l_l_value", font=("Times New Roman", 20), bg="#DEDEDE")
+l_l_label.place(x = 680,y = 542)
 
 window.mainloop()
