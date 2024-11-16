@@ -4,7 +4,7 @@ from matplotlib import ticker
 import GenreProcessing as gp
 
 # SEARCH HERE #
-query = "edm"
+query = "rock"
 data = gp.seek(query)
 # SEARCH HERE #
 
@@ -42,4 +42,4 @@ fig.set_size_inches(10, 5, forward=True)
 #show
 plt.show()
 
-plt.savefig("figures/plot_%s.png" % query)
+fig.savefig("figures/plot_%s.png" % query)
