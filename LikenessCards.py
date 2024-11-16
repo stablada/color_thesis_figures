@@ -19,13 +19,19 @@
 
 import tkinter as tk
 import CleanData as cd
+from PIL import Image
+from pyscreenshot import grab
+
+def screenshot():
+    img = grab((15,50,1360,945))
+    img.save('figures/figure_%s.png' % data.Genre.name)
 
 ## SEARCH HERE ##
 query = "edm"
 ## SEARCH HERE ##
 
 window = tk.Tk()
-window.geometry('900x600')
+window.geometry('900x600+0+0')
 
 data = cd.create_data(query)
 
@@ -92,4 +98,9 @@ l_s_label.place(x = 700,y = 492)
 l_l_label = tk.Label(window, text=data.l_l_value, font=("Times New Roman", 20), bg="#DEDEDE")
 l_l_label.place(x = 700,y = 542)
 
+screenshotter = tk.Tk()
+screenshotter.geometry('200x200+900+900')
+button = tk.Button(screenshotter, text = "Screenshot", command=screenshot).pack()
+
 window.mainloop()
+
