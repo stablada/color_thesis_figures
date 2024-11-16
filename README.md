@@ -1,4 +1,4 @@
-![Image_banner]()
+![Image_banner](Color_Thesis_Figures.png)
 # CTFigures
 ![Static Badge](https://img.shields.io/badge/Category-Projects-purple)
 ![Static Badge](https://img.shields.io/badge/Language-Python%203.12-blue)
@@ -19,7 +19,9 @@ In this sector, we will analyze and break down the Procedures used in creating t
 
 ### Prototyping and Ideating
 Initially, the researcher and I spoke about their desired figures, and they sketched an idea to me on paper. From here, I created a render in Figma, and showed it to them. Upon approval, I began thinking about what libraries to use and how I could create a good render of their desired product.
-![Prototype Image on Figma]()
+<p align="center">
+ <img src="prototype_likeness_card.png" width="400" height="291">
+</p>
 After a while of thinking, I decided to use my limited experience in Tkinter as an opportunity to further learn about tkinter. This library is normally used for GUIs, so I knew it would be an interesting use but I'll never say no to a challenge. Then for the requested scatterplots, I went with one of the other most popular libraries in python for data visualization, Matplotlib. This graphing library would certainly come in handy for creating a scatterplot to the desired specifications of the researcher.
 
 ### Data Cleaning
@@ -36,7 +38,9 @@ In files LikenessCards.py and PointsFigure, the aforementioned objects are used 
 ## Results
 ### Use
 This program has no initial user interface, nor a main class as it is made to be as lightweight as can be for the sake of ease. The query variables in both Visualization classes are the main dictators for what will be generated, as querying something like `query("edm")` will lead to a visualization of the data in attributes `"h_edm"`, `"s_edm"`, `"l_edm"`, and `"ln_edm"`.
-![How the program is used]()
+<p align="center">
+ <img src="md_example.png" width="400" height="328">
+</p>
 
 ### HSL Plots
 Items for the HSL plots are placed on a color spectrum, wherein items are plotted with the formula `x = h_value` and `y = l_value`. This is due to the fact that on the color spectrum, hue represents a value between `0->360`, ranging from red hues to the violet end of the spectrum. Thus, in this visualization, we take the h and L values and overlay them on a grid representative of the color spectrum.
@@ -55,7 +59,6 @@ ________  ___      ________      ___  ___      ________      _______       _____
     \|__|     \|__|    \|_______|    \|_______|    \|__|\|__|    \|_______|   |\_________\
                                                                               \|_________|
 ```
-### Examples
 <p align="center">
   <img src="/figures/plot_rap.png" width="600" height="300">
   <img src="/figures/plot_metal.png" width="600" height="300">
