@@ -1,27 +1,30 @@
 import pandas as pd
 
+
 # Seek command for LikenessCards data pulling
 def seek(query):
-        for genre in genre_list:
-                if genre.name is query:
-                        return genre
+    for genre in genre_list:
+        if genre.name is query:
+            return genre
+
 
 # Genre Object Class which holds items for later analysis
 class Genre:
-        # global vars
-        global name
-        global h_val, s_val, l_val
-        global likeness
-        global dataframe
+    # global vars
+    global name
+    global h_val, s_val, l_val
+    global likeness
+    global dataframe
 
-        # funcs
-        def __init__(self, name, h_val, s_val, l_val, likeness):
-                self.name = name
-                self.h_val = h_val
-                self.s_val = s_val
-                self.l_val = l_val
-                self.likeness = likeness
-                self.dataframe = pd.concat([h_val, s_val, l_val, likeness], axis=1)
+    # funcs
+    def __init__(self, name, h_val, s_val, l_val, likeness):
+        self.name = name
+        self.h_val = h_val
+        self.s_val = s_val
+        self.l_val = l_val
+        self.likeness = likeness
+        self.dataframe = pd.concat([h_val, s_val, l_val, likeness], axis=1)
+
 
 genre_list = []
 
